@@ -1,7 +1,8 @@
 package com.pheakuniverse.store;
 
-public class StripePaymentService {
-    public void processPayment(double amount){
+public class StripePaymentService implements PaymentService {
+    @Override
+    public void processPayment(double amount) {
         System.out.println("Stripe");
         System.out.println("Amount:" + amount);
     }
